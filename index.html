@@ -250,10 +250,21 @@
       </div> 
     </div>
     <br>    <br>
+
+    <!-- 右侧固定导航栏 -->
+    <div class="side-nav">
+      <a href="#Abstract">Abstract</a>
+      <a href="#Our Contributions">Our Contributions</a>
+      <a href="#Scene">Scene: Basic Chinese Understanding Ability in Education</a>
+      <a href="#Object">Object: Virtual Student Construction</a>
+      <a href="#Evaluation">Evaluation: Analysis of object capabilities in scenes</a>
+      <a href="#Badcase">Bad Case Analysis</a>
+    </div>
+
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div id ='Abstract' class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>The capabilities of large language models (LLMs) have been applied in expert systems across various domains, providing new opportunities for AI in Education (AI4Education). Educational interactions involve a cyclical exchange between teachers and students. Current research predominantly focuses on using LLMs to simulate teachers, leveraging their expertise to enhance student learning outcomes. However, the simulation of students, which could improve teachers' instructional skills, has received insufficient attention due to the challenges of modeling and evaluating virtual students. This research poses the question: “<em>Can LLMs be utilized to develop virtual student agents that mimic human-like behavior and individual variability?</em>” Unlike expert systems focusing on knowledge delivery, virtual students must replicate learning difficulties, emotional responses, and linguistic uncertainties. These traits present significant challenges in both modeling and evaluation. To address these issues, this study focuses on language learning as a context for modeling virtual student agents. We propose a novel AI4Education framework, termed <b>SOE</b> (<b>S</b>cene - <b>O</b>bject - <b>E</b>valuation), to systematically construct <b>LVSA</b> (<b>L</b>LM-based <b>V</b>irtual <b>S</b>tudent <b>A</b>gents). By curating a dataset of personalized teacher-student interactions with various personality traits, question types, and learning stages, and fine-tuning LLMs using LoRA, we conduct multi-dimensional evaluation experiments. Specifically, we: (1) develop a theoretical framework for generating LVSA; (2) integrate human subjective evaluation metrics into GPT-4 assessments, demonstrating a strong correlation between human evaluators and GPT-4 in judging LVSA authenticity; and (3) validate that LLMs can generate human-like, personalized virtual student agents in educational contexts, laying a foundation for future applications in pre-service teacher training and multi-agent simulation environments.
@@ -266,9 +277,7 @@
   <section class="section"> -->
     <br>
     <br>
-    <div class="container is-max-desktop">
-      <!-- Method -->
-      <!-- <br /> -->
+    <div id= 'Our Contributions' class="container is-max-desktop">
       <div style="text-align:center">
         <h2 class="title is-3">Our Contributions</h2>
       </div>
@@ -278,10 +287,10 @@
           <p>(2) <b>Subjective evaluation metrics integration:</b> We invited ten human evaluators to conduct Turing tests, distinguishing between the LVSA and real students. After the tests, we incorporated human subjective metrics into GPT-4’s evaluation pipeline to align with human assessments of virtual student authenticity (see Sections 5.2 and 5.3).</p>
           <p>(3) <b>LVSA validation:</b> We conducted an in-depth, large-scale analysis of LVSA performance using GPT-4 across different personality types, learning stages, and question types, both before and after fine-tuning four foundational models. This evaluation aimed to assess whether these virtual students could achieve personalization, human-like performance, and adaptability in various educational scenarios (see Section 5.4).</p>
         <br>
-
-        <br>
+      </div>
+    </div>
   
-
+    <div id= 'Scene' class="container is-max-desktop">
       <div style="text-align:center">
         <h2 class="title is-3">Scene: Basic Chinese Understanding Ability in Education</h2>
       </div>
@@ -301,8 +310,9 @@
 
       </div>
       <br>
+    </div>
 
-
+    <div id= 'Object' class="container is-max-desktop">
       <div style="text-align:center">
         <h2 class="title is-3">Object: Virtual Student Construction</h2>
       </div>
@@ -321,8 +331,9 @@
         </figure>
         <p>After generating fine-tuning student-teacher dialogues based on the Big Five personality traits, word cloud visualizations were used to analyze students' expression styles and lexical richness. The word cloud for <b>HE</b> highlights frequent use of self-referential and positive language, suggesting extraverted students who engage in social interaction. <b>HN</b> shows hesitancy and uncertainty, marked by emotional fluctuation and nervousness. <b>LO</b> predominantly uses conservative and structured language, indicating a reliance on established knowledge. <b>HA</b> emphasizes cooperation, empathy, and warmth, while LC reflects imprecise and disorganized expression, characteristic of lower conscientiousness. These findings align with existing research on how language style reflects cognitive abilities and personality traits, validating the uniqueness and effectiveness of the fine-tuning dataset used for LVSA construction.</p>
         <p>The fine-tuning process was conducted using a high-performance setup, enabling the LLM to personalize the generated responses for each student personality type. Results show that after fine-tuning, the models demonstrated improved linguistic capabilities, with LVSA responses better aligned with targeted personality traits and classroom dialogue styles.</p>
-      
-      
+    </div>  
+
+    <div id= 'Evaluation' class="container is-max-desktop"> 
         <div style="text-align:center">
         <h2 class="title is-3">Evaluation: Analysis of object capabilities in scenes</h2>
       </div>
@@ -407,7 +418,7 @@
 
       
       <br>
-
+    <div id= 'Badcase' class="container is-max-desktop">
       <div style="text-align:center">
         <h2 class="title is-3">Bad Case Analysis</h2>
       </div>
@@ -424,7 +435,7 @@
         <p><b>Suboptimal fine-tuning performance of LLaVa: </b>Despite improvements in personalization, question types, and learning stages, LLaVa’s overall performance remained weaker than that of others. This disparity is primarily due to differences between pre-training and finetuning data domains, particularly cross-language issues. Given that LLaVa predominantly relies on English pre-training data, its adaptability and generalization to Chinese contexts are constrained.</p>
       </div>
       <br>
-
+    </div>
 
       <br />
       <!-- <div class="columns is-centered">
