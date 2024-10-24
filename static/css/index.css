@@ -2,6 +2,39 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* 固定导航栏样式 */
+.side-nav {
+  position: fixed;
+  top: 100px; /* 距离顶部的距离，可根据页面情况调整 */
+  right: 20px; /* 固定在右侧 */
+  width: 200px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航链接样式 */
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.side-nav a:hover {
+  color: #0056b3;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -185,35 +218,3 @@ mydiv {
 }
 
 
-/* 固定导航栏样式 */
-.side-nav {
-  position: fixed;
-  top: 100px; /* 距离顶部的距离，可根据页面情况调整 */
-  right: 20px; /* 固定在右侧 */
-  width: 200px;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 导航链接样式 */
-.side-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.side-nav ul li {
-  margin: 10px 0;
-}
-
-.side-nav a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-.side-nav a:hover {
-  color: #0056b3;
-}
