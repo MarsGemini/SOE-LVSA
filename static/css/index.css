@@ -2,6 +2,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .footer .icon-link {
     font-size: 25px;
@@ -181,24 +184,36 @@ mydiv {
   margin: 20px; */
 }
 
-/* 右侧导航栏样式 */
+
+/* 固定导航栏样式 */
 .side-nav {
   position: fixed;
-  top: 20%;
-  right: 20px;
-  background-color: #f8f8f8;
+  top: 100px; /* 距离顶部的距离，可根据页面情况调整 */
+  right: 20px; /* 固定在右侧 */
+  width: 200px;
+  background-color: #f9f9f9;
   padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 导航链接样式 */
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+}
+
 .side-nav a {
-  display: block;
-  padding: 8px;
   text-decoration: none;
-  color: #333;
+  color: #007bff;
+  font-weight: bold;
 }
 
 .side-nav a:hover {
-  background-color: #ddd;
+  color: #0056b3;
 }
